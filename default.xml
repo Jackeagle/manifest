@@ -14,6 +14,10 @@
   <remote  name="glade"
            fetch="https://github.com/TeamGlade" />
 
+  <remote  name="omnirom"
+           review="gerrit.omnirom.org"
+           fetch="https://github.com/omnirom" />
+
   <default revision="refs/tags/android-5.0.2_r1"
            remote="aosp"
            sync-c="true"

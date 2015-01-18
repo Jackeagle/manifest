@@ -11,16 +11,15 @@
            fetch="https://android.googlesource.com"
            review="android-review.googlesource.com" />
 
-  <remote  name="omnirom"
-           review="gerrit.omnirom.org"
-           fetch="https://github.com/omnirom" />
+  <remote  name="glade"
+           fetch="https://github.com/TeamGlade" />
 
   <default revision="refs/tags/android-5.0.2_r1"
            remote="aosp"
            sync-c="true"
            sync-j="4" />
 
-  <project path="build" name="android_build" remote="omnirom" revision="android-5.0" groups="pdk,tradefed" >
+  <project path="build" name="build" remote="glade" revision="lp5.0" groups="pdk,tradefed" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
@@ -282,7 +281,7 @@
   <project path="external/zopfli" name="platform/external/zopfli" groups="pdk-cw-fs" />
   <project path="external/zxing" name="platform/external/zxing" groups="pdk-cw-fs" />
   <project path="frameworks/av" name="android_frameworks_av" remote="omnirom" revision="android-5.0" groups="pdk" />
-  <project path="frameworks/base" name="android_frameworks_base" remote="omnirom" revision="android-5.0" groups="pdk-cw-fs" />
+  <project path="frameworks/base" name="frameworks_base" remote="glade" revision="lp5.0" groups="pdk-cw-fs" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" />
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk" />
@@ -402,7 +401,7 @@
   <project path="packages/apps/PhoneCommon" name="platform/packages/apps/PhoneCommon" />
   <project path="packages/apps/Provision" name="platform/packages/apps/Provision" />
   <project path="packages/apps/QuickSearchBox" name="android_packages_apps_QuickSearchBox" remote="omnirom" revision="android-5.0" />
-  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="omnirom" revision="android-5.0" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="glade" revision="lp5.0" />
   <project path="packages/apps/SmartCardService" name="platform/packages/apps/SmartCardService" />
   <project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder" />
   <project path="packages/apps/SpareParts" name="platform/packages/apps/SpareParts" />
@@ -511,7 +510,7 @@
   <project path="tools/studio/translation" name="platform/tools/studio/translation" groups="notdefault,tools" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
-  <project path="vendor/omni" name="android_vendor_omni" remote="omnirom" revision="android-5.0" />
+  <project path="vendor/omni" name="vendor_glade" remote="galde" revision="android-5.0" />
   <project path="packages/apps/MonthCalendarWidget" name="android_packages_apps_MonthCalendarWidget" remote="omnirom" revision="android-5.0" />
 
 </manifest>
